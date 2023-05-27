@@ -47,9 +47,9 @@ const routes = [
   {
     path: "/",
     element: (
-      <RequireAuth>
+      // <RequireAuth>
         <IndexPage />
-      </RequireAuth>
+      // </RequireAuth>
     ),
   },
   {

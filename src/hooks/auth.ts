@@ -23,11 +23,11 @@ export function useAuth() {
       const { data: details, code: c_code } = await checkAdminRole();
       if (c_code === 0) {
         if (details.role === "ADMIN") {
-          message.success("登录成功");
           navigate("/");
+          message.success("登录成功");
         } else {
-          message.error("您不是管理员, 无法登录!");
           clearLoginState();
+          message.error("您不是管理员, 无法登录!");
         }
       }
     }

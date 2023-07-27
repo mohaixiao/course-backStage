@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import Icon from "../../../assets/images/backstage_manager_icon.png";
 
 const AdminManager = () => (
-  <div className="z-10 ">
+  <div className="relative z-10">
     <Link to="/manager">
-      <div className="absolute left-10 cursor-pointer items-center flex">
-        <img src={Icon} className="w-3 h-3 lg:w-5 lg:h-5" alt="icon" />
-        <p className="text-blue-400 font-bold pl-3 lg:text-lg text-sm">后台管理</p>
-      </div> 
+      <div className="absolute top-20 left-10 cursor-pointer flex items-center justify-center ">
+        <img src={Icon} className="w-5 h-5" alt="icon" />
+        <span className="text-blue-400 font-bold pl-3">后台管理</span>
+      </div>
     </Link>
   </div>
 );

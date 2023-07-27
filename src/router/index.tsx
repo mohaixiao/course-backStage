@@ -59,9 +59,9 @@ const routes = [
   {
     path: "manager",
     element: (
-      <RequireAuth>
+      // <RequireAuth>
         <ManagerPage />
-      </RequireAuth>
+      // </RequireAuth>
     ),
     children: modules,
   },
